@@ -1,8 +1,8 @@
 # TestApp
 
 UI useing SwiftUI
-Implemented MVVM
-Service Integration
+I have Implemented MVVM Architecture
+I have Implemented Service Integration
 Added Localization
 Added Accessbility
 Implemented UnitTesting
