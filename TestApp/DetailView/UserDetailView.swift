@@ -9,6 +9,7 @@ import SwiftUI
 
 struct UserDetailView: View {
     let userInfo: User
+    
     var body: some View {
         
         VStack(alignment: .center) {
