@@ -21,15 +21,23 @@ struct UserListView: View {
                     List(viewModel.users ?? [], id: \.id) { user in
                         NavigationLink(destination: UserDetailView(userInfo: user)) {
                             HStack {
-                                AsyncImage(url: URL(string: user.avatar )) { image in
-                                    image
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .clipShape(Circle())
-                                } placeholder: {
-                                    Circle()
-                                        .foregroundColor(.teal)
-                                }
+                                //                                AsyncImage(url: URL(string: user.avatar )) { image in
+                                //                                    image
+                                //                                        .resizable()
+                                //                                        .aspectRatio(contentMode: .fit)
+                                //                                        .clipShape(Circle())
+                                //                                } placeholder: {
+                                //                                    Circle()
+                                //                                        .foregroundColor(.teal)
+                                //                                }
+                                //                                .frame(width: Constants.frameHeightAndWidth70, height: Constants.frameHeightAndWidth70)
+                                
+                                CustomAsyncImage(
+                                    url: URL(string: user.avatar),
+                                    placeholder: Image(systemName: Constants.photoImg),
+                                    errorImage: Image(systemName: Constants.exclamationmarkImg),
+                                    showSpinner: true
+                                )
                                 .frame(width: Constants.frameHeightAndWidth70, height: Constants.frameHeightAndWidth70)
                                 
                                 HStack() {

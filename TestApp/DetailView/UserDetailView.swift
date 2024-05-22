@@ -14,15 +14,23 @@ struct UserDetailView: View {
         
         VStack(alignment: .center) {
             Spacer()
-            AsyncImage(url: URL(string: userInfo.avatar )) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(Constants.padding20)
-            } placeholder: {
-                Rectangle()
-                .foregroundColor(.gray)
-            }
+//            AsyncImage(url: URL(string: userInfo.avatar )) { image in
+//                image
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .cornerRadius(Constants.padding20)
+//            } placeholder: {
+//                Rectangle()
+//                .foregroundColor(.gray)
+//            }
+            
+            CustomAsyncImage(
+                            url: URL(string: userInfo.avatar),
+                            placeholder: Image(systemName: Constants.photoImg),
+                            errorImage: Image(systemName: Constants.exclamationmarkImg),
+                            showSpinner: true
+                        )
+            .cornerRadius(20)
             .frame(width:Constants.frameSize200, height: Constants.frameSize200, alignment: .center)
             .padding(Constants.padding20)
             HStack() {

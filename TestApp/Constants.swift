@@ -15,6 +15,9 @@ struct Constants {
     static let padding20 = 20.0
     static let frameSize200 = 200.0
     
+    static let photoImg = "photo"
+    static let  exclamationmarkImg = "exclamationmark.triangle.fill"
+    
     struct APIEndPoints {
         static let baseUrl = "https://reqres.in/api/"
         static let getUsersList = "users?page=1"

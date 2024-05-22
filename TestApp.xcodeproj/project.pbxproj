@@ -24,6 +24,7 @@
 		189FF2D92BAF2E2800FC798C /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189FF2D82BAF2E2800FC798C /* UserListViewModel.swift */; };
 		189FF2DB2BAF2E4500FC798C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189FF2DA2BAF2E4500FC798C /* UserModel.swift */; };
 		189FF2DF2BAF355100FC798C /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189FF2DE2BAF355100FC798C /* LoaderView.swift */; };
+		18FA80812BFE1812005FCE19 /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA80802BFE1812005FCE19 /* CustomAsyncImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		189FF2D82BAF2E2800FC798C /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		189FF2DA2BAF2E4500FC798C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		189FF2DE2BAF355100FC798C /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		18FA80802BFE1812005FCE19 /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				189FF2DE2BAF355100FC798C /* LoaderView.swift */,
+				18FA80802BFE1812005FCE19 /* CustomAsyncImage.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183AA7E02BB145F1009A341A /* Constants.swift in Sources */,
+				18FA80812BFE1812005FCE19 /* CustomAsyncImage.swift in Sources */,
 				189FF2D72BAF2DB000FC798C /* ErrorCases.swift in Sources */,
 				189FF2D52BAF2D8300FC798C /* WebService.swift in Sources */,
 				189FF2AA2BAF2C3B00FC798C /* UserListView.swift in Sources */,
